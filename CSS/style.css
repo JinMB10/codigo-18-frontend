@@ -4,16 +4,23 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #090e16;
   color: #fff;
 }
 
-.align-center{
-  align-items:center;
+.align-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.divider {
+  border: solid rgba(123, 74, 226, 0.2) 0.5px;
 }
 nav {
-  display: flex;
   /* space-between => Separa elementos de extremo a extremo */
   justify-content: space-between;
   background-color: rgba(123, 74, 226, 0.05);
@@ -26,12 +33,10 @@ nav {
   margin: 30px 80px;
   padding: 15px;
   border-radius: 16px;
- 
 }
 
 .nav-list {
   list-style: none;
-  display: flex;
   gap: 20px;
 }
 
@@ -46,9 +51,8 @@ nav {
 
 main {
   height: 50vh;
-  display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 80px;
   align-items: center;
 }
 
@@ -73,7 +77,6 @@ main {
 }
 
 .social-links {
-  display: flex;
   gap: 15px;
 }
 
@@ -84,7 +87,6 @@ main {
 }
 
 .container-contact {
-  display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: end;
@@ -96,14 +98,87 @@ main {
 }
 
 .container-contact > a:first-child {
-  display:flex;
   gap: 5px;
 }
 
-.container-contact > a:last-child{
-  border:rgba(123, 74, 226, 0.5) solid;
-  display:flex;
+.container-contact > a:last-child {
+  border: rgba(123, 74, 226, 0.5) solid;
   gap: 5px;
   padding: 5px;
   border-radius: 16px;
+}
+
+.container-cards {
+  justify-content: center;
+  gap: 70px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.container-cards > div {
+  text-align: center;
+  border: solid rgba(123, 74, 226, 0.5);
+  width: 246px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.container-cards > div:nth-child(2){
+  background-color: rgba(123, 74, 226, 0.1);
+  border:none;
+}
+
+.container-cards > div > p {
+  font-weight: 300;
+  margin-top: 10px;
+}
+.container-cards > div > h5 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container-sumary{
+  justify-content: center;
+  gap: 70px;
+  width:878px;
+  margin:auto;
+  background-color: rgba(123, 74, 226, 0.1);
+  border:none;
+  border-radius:16px;
+ 
+}
+
+.container-sumary>div{
+  flex-direction: column;
+  width:246px;
+  text-align:center;
+  
+  
+}
+.container-about-me {
+  justify-content: space-between;
+  padding: 30px 80px;
+}
+
+.container-about-me > div > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+.container-about-me > div > h2 {
+  font-size: 48px;
+}
+
+.container-about-me > div > p {
+  color: rgba(255, 255, 2555, 0.5);
 }

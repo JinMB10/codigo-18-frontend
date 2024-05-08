@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michel Espejo - Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <nav class="align-center">
+    <nav class="flex align-center">
       <div>
         <img src="./images/Logo.svg" alt="Logo" width="36.32px" height="40" />
       </div>
       <div>
-        <ul class="nav-list">
+        <ul class="nav-list flex">
           <li><a href="" target="_blank">Home</a></li>
           <li><a href="" target="_blank">Sobre mi</a></li>
           <li><a href="" target="_blank">Portafolio</a></li>
@@ -23,12 +30,12 @@
         </ul>
       </div>
     </nav>
-    <main>
+    <main class="flex">
       <div>
         <span class="gretting">👋Saludos!</span>
         <h1 class="title">Michel Espejo</h1>
         <p class="description">Software Developer</p>
-        <div class="social-links" align-center>
+        <div class="align-center social-links flex">
           <a href="" target="_blank">
             <img src="./images/linkedin.svg" alt="Logo de Linkedin" />
           </a>
@@ -43,17 +50,75 @@
       <div class="container-profile">
         <img src="./images/profile.jpg" alt="Foto de perfil Michel Espejo" />
       </div>
-      <div class="container-contact">
-        <a href="" class="align-center" target="_blank"
+      <div class="container-contact flex">
+        <a href="" class="align-center flex" target="_blank"
           >Descargar CV
           <img src="./images/ArrowLineDown.svg" alt="Imagen de descarga" />
         </a>
-        <a href="" class="align-center" target="_blank">
+        <a href="" class="align-center flex" target="_blank">
           <img src="./images/WhatsappLogo.svg" alt="Imagen de whatssap" />Vamos
           a conversar
         </a>
       </div>
-      
     </main>
+    <hr class="divider" />
+    <section>
+      <div class="container-cards flex">
+        <div class="flex">
+          <img src="./images/codeicon.svg" alt="Logo de ícono de código" />
+          <p>2 años como</p>
+          <h5>Programador</h5>
+        </div>
+        <div class="flex">
+          <img src="./images/proyecicon.svg" alt="Logo de ícono de proyecto" />
+          <p>1 año resolviendo</p>
+          <h5>proyectos</h5>
+        </div>
+        <div class="flex">
+          <img src="./images/designicon.svg" alt="Logo de ícono de diseño" />
+          <p>1 año como</p>
+          <h5>front-end</h5>
+        </div>
+      </div>
+      <div class="container-sumary flex">
+        <div class="flex">
+          <p>Developer</p>
+          <p>Front-end</p>
+        </div>
+        <div class="flex">
+          <p>Descenas de proyectos</p>
+          <p>Experiencias</p>
+        </div>
+        <div class="flex">
+          <p>Diseñador freelance</p>
+          <p>UI/UX</p>
+        </div>
+      </div>
+    </section>
+    <hr class="divider" />
+    <section class="container-about-me flex">
+      <div>
+        <img src="./images/profile.jpg" alt="Foto de perfil" />
+      </div>
+      <div>
+        <span class="gretting">👋Sobre mi</span>
+        <h2 class="mt-20">Michel Brian</h2>
+        <h2 class="mb-20">Espejo Villavicencio</h2>
+        <p class="mb-20">
+          👋Hola a todos, me llamo Michel Brian Espejo Villavicencio.
+        </p>
+        <p>
+          👲Tengo más de 1 año programando interfaces con JavaScript, React JS e
+          Typescript.
+        </p>
+        <p>
+          💻 Actualmente soy estudiante de la carrera de Diseño y desarrollo de
+          software en el instituto superior TECSUP.
+        </p>
+        <p class="mt-20">
+          😃 Mis intereses es ser Desarrollador web Full Stack.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
